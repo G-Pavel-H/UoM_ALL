@@ -1,0 +1,25 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="stendhal"
+    xmlns:tns="http://www.example.org/zones" elementFormDefault="qualified"
+    xmlns:Q1="stendhal">
+
+  <redefine schemaLocation="./items.xsd">
+    <complexType name="attributes">
+      <complexContent>
+        <extension base="Q1:attributes">
+          <sequence>
+            <element name="min_level" type="Q1:attribute" minOccurs="1" maxOccurs="unbounded"/>
+            <element name="full_set" type="integer" minOccurs="1" maxOccurs="unbounded"/>
+            <element name="disguise_id" type="integer" minOccurs="1" maxOccurs="unbounded"/>
+          </sequence>
+        </extension>
+      </complexContent>
+    </complexType>
+    <complexType name="disguised_to">
+      <attribute name="entity" type="string" minOccurs="1" maxOccurs="unbounded"/>
+    </complexType>
+    <complexType name="set_items">
+      <attribute name="entity" type="string" minOccurs="0" maxOccurs="unbounded"/>
+    </complexType>
+  </redefine>
+
+</schema>

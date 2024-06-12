@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Experience </title>
+    <link rel="stylesheet" href="covexpstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = "https://t4.ftcdn.net/jpg/04/22/06/73/360_F_422067302_IEWvsSJCrpC58kJKfREnUoTt53T4ysY6.jpg" type = "image/x-icon">
+  </head>
+  <body >
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Group 7 Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--All right-aligned navbar content goes in here-->
+        <!--Content automatically scales into a dropdown menu for smaller screens-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./uniresponse.html">University Response</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./Experience.html" id="navbarDropdown">Individual Experiences</a>
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>-->
+
+                    <div class="dropdown-menu topdropdown" aria-labelledby="navbarDropdown"> <!--Personal page links go here-->
+                        <a class="dropdown-item" href="./Experience.html#pavel">Pavel</a>
+                        <a class="dropdown-item" href="./Experience.html#jonathan">Jonathan</a>
+                    <a class="dropdown-item" href="./Experience.html#asma">Asma</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covid.html">About Covid</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> <!--All left-aligned navbar content-->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary cb-inline-block my-2 my-lg-0 pull-right" data-container="body" data-toggle="popover" data-placement="bottom" title="Designed By:"
+                data-content="Pavel Ghazaryan<br>Asma Alshebli<br>Jonathan Hackett<br>" data-html="true">
+                        About Us
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main">
+      <!-- The Bootstrap carousel -->
+      <div class="jumbotron bg-dark py-0 px-0 m-0 title">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active ">
+                         <img class="d-block w-100 " src="images/all.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block text-left py-0">
+                          <h1 class = "font-weight-bold ">Our Personal Experience of <br> the Pandemic <br> and <br> the Online Learning</h5>
+                        </div>
+                      </div>
+                   <div class="carousel-item">
+                           <a href="#asma">
+                             <img class="d-block w-100 " src="images/asma.jpg" alt="First slide">
+                             <div class="carousel-caption d-none d-md-block text-left py-0">
+                              <h1 class = "font-weight-bold">Asma's Story</h5>
+                              <p>Having to start university online, a few things have changed when it comes to group work. Mainly our heavy reliance on platforms such as Whatsapp and Zoom for communication. Whenever I had to work in a group, we’d always plan on Whatsapp and then hold a meeting on zoom. Being able to collaborate with students from all over the world has made me aware of the different time zones ...</p>
+                            </div>
+                          </a>
+                      </div>
+
+                      <div class="carousel-item">
+                          <a href="#jonathan"> <img class="d-block w-100 " src="images/jonathan.jpg" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block text-left py-0">
+                            <h1 class = "font-weight-bold">Jonathan's Story</h5>
+                            <p>Groupwork is something that I’m not very used to at all, so I initially found it quite difficult to get started. Adding on the fact that I can’t see either of my coursework groups in person, it became clear that some time would be needed for me to adjust to this style of working. Completely online group coursework offers some unique, and sometimes ...</p>
+                          </div>
+                          </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="#pavel"> <img class="d-block w-100 " src="images/pavel.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block text-left py-0">
+                          <h1 class = "font-weight-bold">Pavel's Story</h5>
+                          <p>My case was not an exception compared to the global interception of the COVID-19 pandemic: I was also in desperation and in panic in the first stage. However, day by day, like everyone else, I got used to being under lockdown at home 24/7. Due to the pandemic, I have missed my real graduation at the end of May and was forced to finish my studies in March of 2020. I was also pessimistic about how my university studies...</p>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                              <a href="#tech">
+                                <img class="d-block w-100 " src="images/tech.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block text-left py-0">
+                                 <h1 class = "font-weight-bold">New Technology that We used</h5>
+                                 <p>Since we switched to remote learning due to the pandemic, almost all of our studies depended on different technologies and online platforms...</p>
+                               </div>
+                             </a>
+                         </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+      </div>
+      <!--Smaller menu-->
+      <div class="line container-fluid ">
+          <nav class="navbar navbar-expand-sm p-0 exp ">
+            <div class="collapse navbar-collapse d-flex justify-content-center text-dark " id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item px-5">
+                  <a class="nav-link" href="#asma">Asma</a>
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link" href="#jonathan">Jonathan</a>
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link" href="#pavel">Pavel</a>
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link" href="#tech">Tech</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <!--All the experience-->
+      <div class="section text-light container-fluid py-4 px-5" id = "asma">
+        <h1 class ='display-3 my-5 font-weight-bold' >  ASMA'S STORY  </h1>
+        <p> Having to start university online, a few things have changed when it comes to group work. Mainly our heavy reliance on platforms such as Whatsapp and Zoom for communication. Whenever I had to work in a group, we’d always plan on Whatsapp and then hold a meeting on zoom. Being able to collaborate with students from all over the world has made me aware of the different time zones. Where we once used to meet easily, now we have to adjust our schedules and agree on a time that suits     most group members. <br> <br>In addition to that, working almost completely individually at home has been quite the challenge. Time management is key to being productive. From watching lecture videos to solving example sheets, I had to adjust my timetable to find the time where I am most productive. <br> <br>Perhaps synchronous work has the most impact when it comes to online learning. Due to the time zone difference, which changes as we alternate between winter and summer, I had to work later than I normally would. When lectures start at 9 am in the UK, in my time zone it’s 1 pm. So, lectures would stretch up until 9 pm on some days. Therefore, I had to make sure I’m able to attend synchronous sessions and am well rested so I’m able to focus. <br> <br>When it comes to creating and maintaining relationships, much of that has been done through social media. Though making friends online is quite difficult, I did meet a few people that I keep in touch with on the regular. However, COVID had brought me closer to my family. Especially during quarantine. Because we all had so much time on our hands, we got to spend quality time together. <br> <br> Even though this is not how I imagined my transition to higher education to go, I cannot deny that it had strengthened me in more areas than one. And for that, I am grateful.
+        </p>
+      </div>
+      <div class="line container-fluid"></div>
+      <div class="section text-light container-fluid py-4 px-5 " id = "jonathan">
+        <h1 class ='display-3 my-5 font-weight-bold'>  JONATHAN'S STORY  </h1>
+        <p> Groupwork is something that I’m not very used to at all, so I initially found it quite difficult to get started. Adding on the fact that I can’t see either of my coursework groups in person, it became clear that some time would be needed for me to adjust to this style of working. Completely online group coursework offers some unique, and sometimes unavoidable, hurdles. For examples, technical difficulties in our voice chat software left certain group members unable to participate in some of my Computational Thinking sessions. However, both groups were highly cooperative, and I was soon able to get used to collaborating online.
+          <br><br>Moving from the more structured style of college work to the highly independent working style required by University was also a bit of a struggle. However, the fact that I was able to work from my own bedroom, I feel, made the transition much smoother. In order to effectively work from home, I found arranging a timetable to be essential. I also found arranging my workspace to be very beneficial, as this helped in minimizing distractions.
+          <br>Attending lectures over the internet was not my favourite part of the course. Staring at the computer screen all day was tiring and lectures were difficult to focus on. Drop-ins and lab sessions were useful for guidance and clarifications, however the drop-in sessions often clashed with my independent work. With the amount of work each week, attending all of the drop-ins was quite difficult, so I would have to be selective with which sessions I attended, based on which subjects I was least clear on.
+          <br>My social life took a bit of a hit during the pandemic. I wasn’t often completely alone during the day, as my Dad works from home a lot of the time, however keeping in touch with old college friends became difficult. Despite this, we made sure to arrange google meets sessions and in person meetings where possible.
+        </p>
+      </div>
+      <div class="line container-fluid"></div>
+      <div class="section text-light container-fluid py-4 px-5 " id = "pavel">
+        <h1 class ='display-3 my-5 font-weight-bold' >  PAVEL'S STORY  </h1>
+          <p> My case was not an exception compared to the global interception of the COVID-19 pandemic: I was also in desperation and in panic in the first stage. However, day by day, like everyone else, I got used to being under lockdown at home 24/7. Due to the pandemic, I have missed my real graduation at the end of May and was forced to finish my studies in March of 2020. I was also pessimistic about how my university studies will be conducted and how I will be able to integrate with the environment of the university through online learning.
+            <br><br>After spending 1st semester on zoom and blackboard, I have realized how convenient UoM conducted online learning. I have never missed out on any topics, always found myself in participative and productive group works, and was able to show my full potential in all subjects. All the videos were very descriptive and I have realized that I am not missing anything by not studying face-to-face. I have enjoyed online learning a lot due to the way the university has delivered it to me. All the tutorials and group work had given me the opportunity to discover new people and make friends.
+            <br><br>My current group project is not an exception. I am a member of a group with very responsible and hard-working students who never miss deadlines and are being very friendly and productive in terms of studying. I am looking forward to hopefully meeting them in the 1st semester of the 2021/22 academic year. The online learning environment is challenging face-to-face learning in a way that the student is in his/her comfort zone receiving the equal quality of learning..
+            <br><br>All in all, I am pleased with the online learning opportunities that UoM has set up for its students. It is convenient, productive and You, as a student, do not miss out on anything in terms of studying and socializing.
+        </p>
+      </div>
+      <div class="line container-fluid"></div>
+      <div class="section text-light container-fluid py-4 px-5 " id = "tech">
+        <h1 class ='display-3 my-5 font-weight-bold' >  New Technology that We used  </h1>
+          <p> Since we switched to remote learning due to the pandemic, almost all of our studies depended on different technologies and online platforms. We compiled a list that sums up these new platforms which helped accommodate our learning:
+<br><br><b>Zoom:</b><br><br>
+Zoom is an app that offers video calls and online chatting. It is used widely for different purposes such as online learning, social relations, conferences, etc.
+<br><br><b>Blackboard:</b><br><br>
+Blackboard is an online learning platform mainly used by universities around the world to manage and share a module’s content. Students can then access the content online easily.
+<br><br><b>Google Classroom:</b><br><br>
+Similar to Blackboard, Google Classroom is an online platform where teachers can create an online classroom environment, assign and grade work, communicate with students, etc.
+<br><br><b>Microsoft teams:</b><br><br>
+Microsoft teams is much similar to Zoom. It is part of the Microsoft 365 services. It offers video chatting features that are used for different purposes, mainly business and education.
+<br><br><b>My Attendance:</b><br><br>
+My Attendance is a new feature used by The University of Manchester where students can check-in for their classes and view their attendance history. It is a way to monitor the students attendance, but it’s still in its pilot stage.
+<br><br><b>My manchester:</b><br><br>
+The University of Manchester uses Microsoft 365 log in services so students can access all of the online services and tools the university has to offer on one platform.
+<br><br><b>Google docs & slides:</b><br><br>
+Google docs is an online word processor and Google slides is an online presentation program, which is part of the Google docs service. These services are available online for free and are offered by Google. People can collaborate on a piece of work remotely as these services offer multiple users to access the work simultaneously.
+
+        </p>
+      </div>
+    </div>
+    <footer class = "footer text-center">
+       <p> This website is part of the Computer Science with Integrated Foundation Year project. Designed and created by <b>Asma Alshebli</b>, <b>Jonathan Hackett</b> and <b>Pavel Ghazaryan</b>. All CSS and Bootstrap templates that have been used and modified are taken from <a href="https://getbootstrap.com/" target="_blank">GetBootstrap</a> and <a href="https://www.w3schools.com/default.asp" target="_blank">W3schools</a>. All COVID information was taken from <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-the-covid-19-outbreak" target="_blank">UAE Goverment</a>,
+         <a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do" target="_blank">UK Government</a> and <a href="https://www.gov.am/en/covid-travel-restrictions/" target="_blank">RoA Government</a>.
+       </p>
+    </footer>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
+    <script>
+const $dropdown = $(".dropdown");
+const $dropdownToggle = $(".dropdown-toggle");
+const $dropdownMenu = $(".dropdown-menu");
+const showClass = "show";
+
+$(window).on("load resize", function() {
+  if (this.matchMedia("(min-width: 768px)").matches) {
+    $dropdown.hover(
+      function() {
+        const $this = $(this);
+        $this.addClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "true");
+        $this.find($dropdownMenu).addClass(showClass);
+      },
+      function() {
+        const $this = $(this);
+        $this.removeClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "false");
+        $this.find($dropdownMenu).removeClass(showClass);
+      }
+    );
+  } else {
+    $dropdown.off("mouseenter mouseleave");
+  }
+});
+</script>
+
+  </body>
+</html>

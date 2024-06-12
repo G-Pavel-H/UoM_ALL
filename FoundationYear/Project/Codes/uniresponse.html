@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manchester University's Response</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="unistyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = "https://t4.ftcdn.net/jpg/04/22/06/73/360_F_422067302_IEWvsSJCrpC58kJKfREnUoTt53T4ysY6.jpg" type = "image/x-icon">
+</head>
+<body >
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Group 7 Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--All right-aligned navbar content goes in here-->
+        <!--Content automatically scales into a dropdown menu for smaller screens-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./uniresponse.html">University Response</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./Experience.html" id="navbarDropdown">Individual Experiences</a>
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>-->
+
+                    <div class="dropdown-menu topdropdown" aria-labelledby="navbarDropdown"> <!--Personal page links go here-->
+                        <a class="dropdown-item" href="./Experience.html#pavel">Pavel</a>
+                        <a class="dropdown-item" href="./Experience.html#jonathan">Jonathan</a>
+                    <a class="dropdown-item" href="./Experience.html#asma">Asma</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covid.html">About Covid</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> <!--All left-aligned navbar content-->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary cb-inline-block my-2 my-lg-0 pull-right" data-container="body" data-toggle="popover" data-placement="bottom" title="Designed By:"
+                data-content="Pavel Ghazaryan<br>Asma Alshebli<br>Jonathan Hackett<br>" data-html="true">
+                        About Us
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--The code for the navbar uses "#" as a placeholder for the page links. These can be replaced as more pages are created.-->
+
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
+
+    <script>
+    const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
+
+    $(window).on("load resize", function() {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+        $dropdown.hover(
+            function() {
+                const $this = $(this);
+                $this.addClass(showClass);
+                $this.find($dropdownToggle).attr("aria-expanded", "true");
+                $this.find($dropdownMenu).addClass(showClass);
+             },
+            function() {
+                const $this = $(this);
+                $this.removeClass(showClass);
+                $this.find($dropdownToggle).attr("aria-expanded", "false");
+                $this.find($dropdownMenu).removeClass(showClass);
+            }
+        );
+        } else {
+        $dropdown.off("mouseenter mouseleave");
+        }
+    });
+    </script>
+    <div class="jumbotron imagejumbo jumbotron-fluid text-white unititle appearing" style="background-image: url(./images/uom-header.jpg);">
+        <div class="container">
+            <h1 class="display-4">University Response</h1>
+            <p class="lead">The University of Manchester has taken many steps in the fight against the Coronavirus</p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-dark btn-lg" href="https://www.manchester.ac.uk/coronavirus/" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+    <div class="row appearing">
+        <div class="col-xl-4" align="center" style="min-width: 120px;">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title">ON CAMPUS</h5>
+                            <p class="card-text">The university has put into place a series of guidelines in order to keep on-campus learning as safe as possible:<br>
+                            <ul>
+                                <li>Use of the NHS Covid-19 app is mandatory for everybody on campus</li>
+                                <li>Buildings on campus have designated exit and entry points</li>
+                                <li>Students are advised to use the NHS Covid-19 app to check in to buildings as they enter by scanning the QR code</li>
+                                <li>Students must keep 2 metres apart and wear a face covering when indoors</li>
+                                <li>Students arriving for in person learning are advised to head straight for their rooms once they enter the building, following directional markings on the floor, in order to help maintain social distancing.
+                                <li>Study spaces must be booked in advance</li>
+                            </ul></p>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="btn btn-link" href="https://www.welcome.manchester.ac.uk/welcome-and-induction/staying-safe/" role="button">Source</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title">STUDENT GUIDANCE</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="btn btn-link" href="https://www.manchester.ac.uk/coronavirus/support-current-students/self-isolation/" role="button">Guidance for self isolation...</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="btn btn-link" href="https://www.welcome.manchester.ac.uk/welcome-and-induction/coronavirus-faqs/" role="button">Coronavirus FAQ...</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="btn btn-link" href="https://www.manchester.ac.uk/coronavirus/support-current-students/lockdown-support/" role="button">Student Services...</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="col-xl-4" align="center" style="min-width: 120px;">
+            <div class="card" id="carouselcard">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title">RESEARCH</h5>
+                            <p class="card-text" style=>The University of Manchester is contributing to the fight against Coronavirus through it's research. Given below are some examples:</p>
+                            <!-- <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Research into link between Covid and Hearing Loss
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <img class="card-img-top" src="./images/hearingcheck.jpg">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote"><q>Hearing loss and other auditory problems are  associated with Covid-19 according to a systematic review of research evidence led by University of Manchester and NIHR Manchester Biomedical Research Centre (BRC) scientists...</q></blockquote><br>
+                                            <a href="https://www.manchester.ac.uk/discover/news/evidence-supports-covid-hearing-loss-link-say-scientists/" class="btn btn-link">Learn More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Altered Immune Signature Linked to Long Covid
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <img class="card-img-top" src="./images/800_bcell2.jpg">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote"><q>University of Manchester scientists have discovered a persistent alteration in the immune system of patients, six months after they have been hospitalised for Covid-19, which could be associated with poorer health outcomes...</q></blockquote><br>
+                                            <a href="https://www.manchester.ac.uk/discover/news/altered-immune-signature-linked-to-long-covid/" class="btn btn-link">Learn More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Minimising coronavirus transmission in the workplace
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote"><q>Experts at Manchester are helping to develop effective health and safety measures to reduce the spread of COVID-19 and get society on a route back to normality...</q></blockquote><br>
+                                            <a href="https://www.manchester.ac.uk/coronavirus-response/bmh-coronavirus-projects/minimising-workplace-transmission/" class="btn btn-link">Learn More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                How the University is working with Greater Manchester partners to accelerate clinical trials
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                        <img class="card-img-top" src="./images/coronaTrials.jpg">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote"><q>As part of the One Greater Manchester partnership, scientists at The University of Manchester are helping to coordinate a growing, national effort to accelerate clinical trials in intensive and critical care patients linked to COVID-19....</q></blockquote><br>
+                                            <a href="https://www.manchester.ac.uk/coronavirus-response/bmh-coronavirus-projects/accelerating-trials/" class="btn btn-link">Learn More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/hearingcheck.jpg" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Research into link between Covid and Hearing Loss</h5>
+                                            <p><q>Hearing loss and other auditory problems are  associated with Covid-19 according to a systematic review of research evidence led by University of Manchester and NIHR Manchester Biomedical Research Centre (BRC) scientists...</q></p>
+                                            <a href="https://www.manchester.ac.uk/discover/news/evidence-supports-covid-hearing-loss-link-say-scientists/" class="btn btn-dark">Learn More...</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/800_bcell2.jpg" alt="Second slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Altered Immune Signature Linked to Long Covid</h5>
+                                            <p><q>University of Manchester scientists have discovered a persistent alteration in the immune system of patients, six months after they have been hospitalised for Covid-19, which could be associated with poorer health outcomes...</q></p>
+                                            <a href="https://www.manchester.ac.uk/discover/news/altered-immune-signature-linked-to-long-covid/" class="btn btn-dark">Learn More...</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/workplace.jpg" alt="Third slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Minimising coronavirus transmission in the workplace</h5>
+                                            <p><q>Experts at Manchester are helping to develop effective health and safety measures to reduce the spread of COVID-19 and get society on a route back to normality...</q></p>
+                                            <a href="https://www.manchester.ac.uk/coronavirus-response/bmh-coronavirus-projects/minimising-workplace-transmission/" class="btn btn-dark">Learn More...</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/coronaTrials.jpg" alt="Fourth slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>How the University is working with Greater Manchester partners to accelerate clinical trials</h5>
+                                            <p><q>As part of the One Greater Manchester partnership, scientists at The University of Manchester are helping to coordinate a growing, national effort to accelerate clinical trials in intensive and critical care patients linked to COVID-19...</q></p>
+                                            <a href="https://www.manchester.ac.uk/coronavirus-response/bmh-coronavirus-projects/accelerating-trials/" class="btn btn-dark">Learn More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="col-xl-4" align="center" style="min-width: 120px;">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title">TESTING</h5>
+                            <p class="card-text">In order to help keep students safe, the University is allowing each of it's students to book up to two asymptomatic Covid tests per week.</p>
+                            <p class="card-text">Every student at the University is eligible for a test at the University, however they are specifically encouraging students who are required to be on campus to take regular tests in order to reduce the risk of spread.</p>
+                            <p class="card-text">Students who plan to return to campus are encouraged to take a single test through NHS test and trace before returning, then to book twice-weekly tests 3-4 days apart for the entire time they are required to work on campus.</p>
+                            <p class="card-text">Results will be given to students through the NHS test and trace system, usually within 48 hours.</p>
+                            <a class="btn btn-dark" href="https://www.manchester.ac.uk/coronavirus/support-current-students/covid-19-testing/booking-form/" role="button">Book a Test</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="btn btn-link" href="https://www.manchester.ac.uk/coronavirus/support-current-students/covid-19-testing/" role="button">Source</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+            <br>
+        </div>
+        </div>
+    <footer class = "footer text-center">
+       <p> This website is part of the Computer Science with Integrated Foundation Year project. Designed and created by <b>Asma Alshebli</b>, <b>Jonathan Hackett</b> and <b>Pavel Ghazaryan</b>. All CSS and Bootstrap templates that have been used and modified are taken from <a href="https://getbootstrap.com/" target="_blank">GetBootstrap</a> and <a href="https://www.w3schools.com/default.asp" target="_blank">W3schools</a>. All COVID information was taken from <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-the-covid-19-outbreak" target="_blank">UAE Goverment</a>,
+         <a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do" target="_blank">UK Government</a> and <a href="https://www.gov.am/en/covid-travel-restrictions/" target="_blank">RoA Government</a>.
+       </p>
+    </footer>
+</body>
+</html>

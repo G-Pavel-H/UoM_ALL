@@ -1,0 +1,186 @@
+body{
+  background-color: #1C2321 !important;
+  padding-top: 5%;
+}
+.navbar .fixed-top{
+  height:5% !important;
+}
+.fixed-top .nav-link:hover, .fixed-top .dropdown:hover {
+  animation-name: navlink-highlight;
+  animation-duration: 0.25s;
+  background-color: #5e6572;
+  color:white !important;
+  border-radius: 12px;
+}
+.navbar-brand{
+  color: #7d98a1
+}
+.navbar-brand:hover{
+  color: #7d98a1 !important;
+  animation-name: navlogo-highlight;
+  animation-duration: 0.25s;
+}
+
+.main{
+  width: auto;
+  background-color: #1C2321;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+.section{
+  height: auto;
+  width: auto;
+  background-color: #5E6572;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.line .nav-link {
+  color: rgba(247, 247, 247, 0.5);
+
+}
+.line{
+  height: auto;
+  width: auto;
+  background-color: #7D98A1;
+  border-top: 10px solid #292b2c;
+  border-bottom: 10px solid #292b2c;
+  margin: 0px;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.line .navbar{
+  font-size: 2.5em;
+}
+.line .exp li:hover{
+  color: rgba(247, 247, 247, 1);
+  border-right: 2px solid #292b2c;
+  border-left: 2px solid #292b2c;
+  background-color: #f7f7f7;
+  animation-name: appear;
+  animation-duration: 0.25s;
+  cursor:pointer;
+}
+.line .exp li:hover .nav-link{
+  color:black;
+}
+.line .covid .bg1:hover{
+  color: rgba(255,255,255,1);
+  background-image: url(images/uae.png);
+  background-size: 100% 100%;
+  animation-name: appear;
+  animation-duration: 0.25s;
+}
+.line .covid .bg2:hover{
+  color: rgba(255,255,255,1);
+  background-image: url(images/uk.png);
+  background-size: 100% 100%;
+  animation-name: appear;
+  animation-duration: 0.25s;
+}
+.line .covid .bg3:hover{
+  color: rgba(255,255,255,1);
+  background-image:url(images/arm.png);
+  background-size: 100% 100%;
+  animation-name: appear;
+  animation-duration: 0.25s;
+}
+#uae{
+  background-image: url(images/uae.png);
+  background-size: 100% 100%;
+}
+#uae p, #uae h1{
+  background-color:rgba(0,0,0,.7);
+  padding:22px;
+}
+#uk{
+  background-image: url(images/uk.png);
+  background-size: 100% 100%;
+}
+#uk p, #uk h1{
+  background-color:rgba(0,0,0,.7);
+  padding:22px;
+}
+#arm{
+  background-image: url(images/arm.png);
+  background-size: 100% 100%;
+}
+#arm p, #arm h1{
+  background-color:rgba(0,0,0,.7);
+  padding:22px;
+}
+.line .covid .bg2{
+  padding-top: 40px;
+}
+.line .covid .nav-link:hover{
+    color: rgba(255,255,255,1);
+}
+.section h1 {
+  border-bottom: 2px solid #292b2c;
+}
+.title{
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.title .carousel-item{
+  height: 580px;
+}
+.main img{
+   object-fit: cover;
+}
+.title .carousel-caption h1 {
+  text-align:left;
+  margin-left:0px;
+  background-color:rgba(0,0,0,.6);
+  margin-bottom: 18%;
+  padding:22px;
+}
+.line .carousel-caption p {
+  padding:22px;
+  margin-top:8%;
+  background-color:rgba(0,0,0,.7);
+}
+.carousel-caption p {
+  padding:10px;
+  margin-top:8%;
+  background-color:rgba(0,0,0,.7);
+}
+.footer{
+  height:auto;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 0.75em;
+  background-color: rgba(28, 35, 33, 1);
+  color: white;
+  animation-name: appear;
+  animation-duration: 4s;
+  border-top: 10px solid black;
+}
+@keyframes appear {
+  0%{
+    opacity:0;
+    color: #343a40;
+  }
+  100%{
+    opacity:1;
+    color: white;
+  }
+}
+
+@keyframes navlink-highlight {
+  0%{
+    background-color: transparent;
+  }
+  100%{
+    border-radius: 12px;
+    background-color: #5e6572;
+  }
+}
+
+@keyframes navlogo-highlight {
+  0%{
+    color: white;
+  }
+  100%{
+    color: #7d98a1;
+  }
+}

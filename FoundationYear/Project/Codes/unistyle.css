@@ -1,0 +1,247 @@
+body{
+  background-color: #1C2321 !important;
+  padding-top: 5%;
+}
+.navbar .fixed-top{
+  background: #1C2321;
+  height: 5% !important;
+}
+.appearing{
+  animation-name: contentappear;
+  animation-duration: 1s;
+}
+
+.fixed-top .nav-link:hover, .fixed-top .dropdown:hover {
+  animation-name: navlink-highlight;
+  animation-duration: 0.25s;
+  background-color: #5e6572;
+  color:white !important;
+  border-radius: 12px;
+
+}
+.card:hover {
+  transform: scale(1.02);
+  background-color: #7698a3;
+}
+
+.col-xl-4 .card{
+  width:100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.card:hover .list-group-item{
+  background-color: #7698a3;
+}
+.card{
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand{
+  color: #7d98a1
+}
+.navbar-brand:hover{
+  color: #7d98a1 !important;
+  animation-name: navlogo-highlight;
+  animation-duration: 0.25s;
+}
+
+.imagejumbo {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron .container{
+  text-align:left;
+  margin-left:0px;
+  background-color:rgba(0,0,0,.6);
+  padding:22px;
+
+}
+
+.card-body{
+  text-align: left;
+}
+.card-body h5{
+  text-align:left;
+}
+.card-title{
+  font-size: 50px;
+}
+.card .btn-link{
+  color: LightCyan;
+}
+.main{
+  width: auto;
+  background-color: #1C2321;
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+.section{
+  height: auto;
+  width: auto;
+  background-color: #5E6572;
+  background-image: linear-gradient(to bottom right, #5E6572, 58727a);
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.bodyappear{
+  animation-name: appear;
+  animation-duration: 2s;
+}
+.line .nav-link {
+  color: rgba(247, 247, 247, 0.5);
+}
+.line{
+  height: auto;
+  width: auto;
+  background-color: #7D98A1;
+  border-top: 10px solid #292b2c;
+  border-bottom: 10px solid #292b2c;
+  margin: 0px;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.line .navbar{
+  font-size:2.5em;
+}
+.line li:hover{
+  border-right: 2px solid #292b2c;
+  border-left: 2px solid #292b2c;
+  background-color: #f7f7f7;
+  animation-name: appear;
+  animation-duration: 1s;
+  color: rgba(247, 247, 247, 1);
+}
+.line .nav-link:hover{
+  color:black;
+}
+.section h1 {
+  border-bottom: 2px solid #292b2c;
+}
+.title{
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+.card, .card .list-group-item{
+  background-color: #7d98a1;
+  color: white;
+}
+
+.card .carousel{
+  height: 670px;
+}
+.card .carousel-item{
+  height:670px;
+  transition: transform 0.2s ease;
+}
+
+.card .carousel-inner{
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card .item{
+  background-position: 50% 50%;
+  width:100%;
+  height:100%;
+}
+
+.card .carousel-item img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  animation-name:caroscale;
+  animation-duration:20s;
+
+}
+
+.jumbotron .carousel-item{
+  height: 580px;
+}
+img{
+  object-fit: cover;
+}
+.carousel-caption h1 {
+  text-align:left;
+  margin-left:0px;
+  background-color:rgba(0,0,0,.6);
+  margin-bottom: 20%;
+  padding:22px;
+}
+.carousel-caption h5{
+  text-align:center;
+  margin-left:0px;
+  background-color:rgba(0,0,0,.6);
+  margin-bottom: 15%;
+  padding:10px;
+}
+.carousel-caption p {
+  padding:10px;
+  margin-top:8%;
+  background-color:rgba(0,0,0,.7);
+}
+.card .carousel-caption .btn {
+  margin-bottom: 8%
+}
+.footer{
+  height:auto;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 0.75em;
+  background-color: rgba(28, 35, 33, 1);
+  color: white;
+  animation-name: appear;
+  animation-duration: 4s;
+  border-top: 10px solid black;
+}
+@keyframes appear {
+  0%{
+    opacity:0;
+    color: #343a40;
+  }
+  100%{
+    opacity:1;
+    color: white;
+  }
+}
+
+@keyframes contentappear {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes navlink-highlight {
+  0%{
+    background-color: transparent;
+  }
+  100%{
+    border-radius: 12px;
+    background-color: #5e6572;
+  }
+}
+
+@keyframes navlogo-highlight {
+  0%{
+    color: white;
+  }
+  100%{
+    color: #7d98a1;
+  }
+}
+
+@keyframes caroscale{
+  0%{
+    transform: scale(1.00)
+  }
+  100%{
+    transform: scale(1.20)
+  }
+}

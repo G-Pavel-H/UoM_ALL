@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script type="text/javascript" src = "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+
+      <table id = "calc">
+        <tr>
+          <td colspan = "4" id = "resultcol">
+            <input type="text" id = "result" value="">
+          </td>
+        </tr>
+
+        <tr>
+            <td colspan = '2'><button type="button" onclick ="clearRes()" class = "diff-color" >C</button></td>
+            <td><button type="button" onclick = "percentage()" class = "diff-color">%</button></td>
+            <td><button type="button" onclick = "operation('/')" class = "diff-color">÷</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick = "updateRes(7)">7</button></td>
+            <td><button type="button" onclick = "updateRes(8)">8</button></td>
+            <td><button type="button" onclick = "updateRes(9)">9</button></td>
+            <td><button type="button" onclick = "operation('*')" class = "diff-color">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick = "updateRes(4)">4</button></td>
+            <td><button type="button" onclick = "updateRes(5)">5</button></td>
+            <td><button type="button" onclick = "updateRes(6)">6</button></td>
+            <td><button type="button" onclick = "operation('-')" class = "diff-color">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick = "updateRes(1)">1</button></td>
+            <td><button type="button" onclick = "updateRes(2)">2</button></td>
+            <td><button type="button" onclick = "updateRes(3)">3</button></td>
+            <td><button type="button" onclick = "operation('+')" class = "diff-color">+</button></td>
+        </tr>
+        <tr>
+            <td colspan = "2"><button type="button" onclick = "updateRes(0)">0</button></td>
+            <td><button type="button"  onclick = "updateRes('.')">.</button></td>
+            <td><button type="button" onclick = "execute()" class = "diff-color">=</button></td>
+        </tr>
+      </table>
+
+    </div>
+
+
+  </body>
+</html>

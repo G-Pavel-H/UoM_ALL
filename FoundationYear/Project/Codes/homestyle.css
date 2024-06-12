@@ -1,0 +1,207 @@
+body{
+  background-color: #1C2321 !important;
+  padding-top: 5%;
+}
+.navbar .fixed-top{
+  background: #1C2321;
+  height: 5% !important;
+}
+.fixed-top .nav-link:hover, .fixed-top .dropdown:hover {
+  animation-name: navlink-highlight;
+  animation-duration: 0.25s;
+  background-color: #5e6572;
+  color:white !important;
+  border-radius: 12px;
+}
+.navbar-brand{
+  color: #7d98a1
+}
+.navbar-brand:hover{
+  color: #7d98a1 !important;
+  animation-name: navlogo-highlight;
+  animation-duration: 0.25s;
+}
+.main{
+  width: auto;
+  background-color: #1C2321;
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+.welcome{
+  background-image:url("images/welcome.jpg");
+  padding: 35px;
+  padding-top: 60px;
+  color: rgba(247, 247, 247, 1);
+  animation-name: appear;
+  animation-duration: 4s;
+  background-size: cover;
+}
+
+.response{
+  background-image:url("images/response.jpg");
+  padding: 35px;
+  padding-top: 60px;
+  color: rgba(247, 247, 247, 1);
+}
+.response h1, .welcome h1{
+  margin-bottom: 100px;
+  background-color:rgba(0,0,0,.8);
+  padding:20px;
+}
+.response p, .welcome p{
+  background-color:rgba(0,0,0,.8);
+  padding:20px;
+}
+.section{
+  height: auto;
+  width: 100%;
+  animation-name: appear;
+  animation-duration: 4s;
+  overflow: hidden;
+}
+.section .row h1{
+  margin-bottom: 60px;
+}
+.section #personal{
+  border-top: 7px solid #7D98A1;
+  padding:10px;
+  background-color: rgba(28, 35, 33,.6);
+  margin-bottom:0px;
+  color: #7D98A1;
+  font-weight:bold;
+}
+.section .col-md h1{
+  background-color:rgba(0,0,0,.9);
+  margin-left: 10px;
+  margin-top: 30px;
+  padding:5px;
+  border-radius:10px;
+  color: #91b9c4;
+}
+.section .col-md p{
+  border-radius:10px;
+  background-color:rgba(0,0,0,.9);
+  padding:10px;
+  color: #91b9c4;
+  margin-top: 22px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height:auto;
+}
+.section .row .jonathan{
+  background-image: url("images/jonathan.jpg");
+  background-position: center;
+  background-size: 200%;
+  transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  opacity:0.5;
+}
+.section .row .jonathan:hover, .section .row .pavel:hover, .section .row .asma:hover{
+  opacity:1;
+  background-size: 265%;
+}
+.section .row .pavel{
+  background-image: url("images/pavel.jpg");
+  background-position: center;
+  background-size: 200%;
+  transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  opacity:0.5;
+}
+.section .row .asma{
+  background-image: url("images/asma.jpg");
+  background-position: center;
+  background-size: 200%;
+  opacity:0.5;
+  transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+}
+.section .row .asma h1{
+  margin-right:15px;
+}
+.section .row a{
+  color:white;
+  text-decoration: none;
+}
+.response a{
+  text-decoration: none;
+  color: rgba(247, 247, 247, 1);
+}
+.response a:hover{
+  text-decoration: none;
+  color: rgba(247, 247, 247, 1);
+}
+.carousel-item{
+  height: 600px;
+  width:100%;
+}
+.main img{
+   object-fit: cover;
+}
+.carousel-caption h1 {
+  text-align:left;
+  margin-left:0px;
+  background-color:rgba(0,0,0,.6);
+  margin-bottom: 20%;
+  padding:22px;
+}
+.carousel-caption p {
+  padding:22px;
+  margin-top:8%;
+  background-color:rgba(0,0,0,.7);
+}
+.jumbotron{
+  animation-name: appear;
+  animation-duration: 4s;
+  border-top: 7px solid #7D98A1;
+  border-bottom: 10px solid rgba(28, 35, 33,.6);
+}
+.footer{
+  height:auto;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 0.75em;
+  background-color: rgba(28, 35, 33, 1);
+  color: white;
+  animation-name: appear;
+  animation-duration: 4s;
+  border-top: 10px solid black;
+}
+@keyframes appear {
+  0%{
+    opacity:0;
+    color: #343a40;
+  }
+  100%{
+    opacity:1;
+    color: white;
+  }
+}
+
+@keyframes navlink-highlight {
+  0%{
+    background-color: transparent;
+  }
+  100%{
+    border-radius: 12px;
+    background-color: #5e6572;
+  }
+}
+
+@keyframes navlogo-highlight {
+  0%{
+    color: white;
+  }
+  100%{
+    color: #7d98a1;
+  }
+}

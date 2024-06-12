@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<items xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="stendhal ../disguises.xsd">
+
+
+  <item name="Disguise Gargoyle Armor">
+    <type class="disguise" subclass="gargoyle_vest" tileid="-1"/>
+    <description>You armor that looks like a gargoyle</description>
+    <implementation class-name="games.stendhal.server.entity.item.Disguise"/>
+    <attributes>
+      <def value="5"/>
+      <full_set value="0"/>
+      <min_level value="0"/>
+      <disguise_id value="1"/>
+    </attributes>
+    <weight value="10"/>
+    <value value="34391"/>
+    <disguised_to entity="gargoyle"/>
+    <equipable>
+      <slot name="ground"/>
+      <slot name="content"/>
+      <slot name="armor"/>
+      <slot name="bag"/>
+      <slot name="trade"/>
+    </equipable>
+  </item>
+
+  <item name="Disguise Cyclops Mask">
+    <type class="disguise" subclass="cyclops_mask" tileid="-1"/>
+    <description>You see a mask that looks like a cyclops</description>
+    <implementation class-name="games.stendhal.server.entity.item.Disguise"/>
+    <attributes>
+      <def value="5"/>
+      <full_set value="0"/>
+      <min_level value="0"/>
+      <disguise_id value="2"/>
+    </attributes>
+    <weight value="10"/>
+    <value value="34392"/>
+    <disguised_to entity="cyclops"/>
+    <equipable>
+      <slot name="ground"/>
+      <slot name="content"/>
+      <slot name="head"/>
+      <slot name="bag"/>
+      <slot name="trade"/>
+    </equipable>
+  </item>
+</items>

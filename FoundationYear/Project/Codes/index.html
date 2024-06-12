@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = "https://t4.ftcdn.net/jpg/04/22/06/73/360_F_422067302_IEWvsSJCrpC58kJKfREnUoTt53T4ysY6.jpg" type = "image/x-icon">
+  </head>
+  <body >
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Group 7 Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--All right-aligned navbar content goes in here-->
+        <!--Content automatically scales into a dropdown menu for smaller screens-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./uniresponse.html">University Response</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./Experience.html" id="navbarDropdown">Individual Experiences</a>
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>-->
+
+                    <div class="dropdown-menu topdropdown" aria-labelledby="navbarDropdown"> <!--Personal page links go here-->
+                        <a class="dropdown-item" href="./Experience.html#pavel">Pavel</a>
+                        <a class="dropdown-item" href="./Experience.html#jonathan">Jonathan</a>
+                    <a class="dropdown-item" href="./Experience.html#asma">Asma</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covid.html">About Covid</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> <!--All left-aligned navbar content-->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary cb-inline-block my-2 my-lg-0 pull-right" data-container="body" data-toggle="popover" data-placement="bottom" title="Designed By:"
+                data-content="Pavel Ghazaryan<br>Asma Alshebli<br>Jonathan Hackett<br>" data-html="true">
+                        About Us
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="welcome text-left pl-0">
+          <h1 class = "display-2 ">Welcome</h1>
+          <p>As COVID started back on December 31, 2019, no one predicted the great impact it will have on the whole world. Our lives have changed drastically since then, whether it's our education, social life and mental health. We've all changed one way or another. On this website, a group of 3 students, Asma Alshebli, Jonathan Hackett and Pavel Ghazaryan share their personal experiences with COVID and summarize the measures their countries and university went through to prevent the pandemic from spreading.</p>
+        </div>
+        <div class="section">
+            <h1 id="personal" class = "display-4 text-center">Personal Experience</h1>
+            <div class="row">
+              <div class="col-md jonathan text-center">
+                <a href="Experience.html#jonathan">
+                    <h1 class = "display-7">Jonathan</h1>
+                    <p>
+                        Jonathan is a british foundation year student at The University of Manchester. He gives an insight on how COVID impacted him in the UK.
+                    </p>
+                </a>
+              </div>
+              <div class="col-md pavel text-center">
+                <a href="Experience.html#pavel">
+                      <h1 class = "display-7">Pavel</h1>
+                      <p>
+                          Pavel is a foundation year student from Armenia, studying at The University of Manchester. Pavel writes about the effect COVID had on his life and on Armenia in general.
+                      </p>
+                </a>
+              </div>
+                <div class="col-md asma text-center">
+                    <a href="Experience.html#asma">
+                      <h1 class = "display-7 text-center">Asma</h1>
+                      <p class = "text-center">
+                              Asma Alshebli is an Emirati student enrolled in the foundation year program to pursue her studies in computer science. She shares her experience with COVID in the UAE.
+                      </p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="jumbotron bg-dark py-0 px-0 m-0">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a href="covid.html#uae">
+                            <img class="d-block w-100 " src="images/uae.jpeg" alt="First slide">
+                              <div class="carousel-caption d-none d-md-block text-left py-0">
+                                  <h1 class = "font-weight-bold "> COVID in the United Arab Emirates</h5>
+                                  <p>The United Arab Emirates puts several rules and regulations to ensure the safety of its citizens during the pandemic. Many tests have been done and citizens are encourages to take the COVID vaccinations at one of the many health centers in the country. <br><b>Click to learn more</b></p>
+                             </div>
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                             <a href="covid.html#uk">
+                               <img class="d-block w-100 " src="images/uk1.jpg" alt="Second slide">
+                               <div class="carousel-caption d-none d-md-block text-left py-0">
+                                <h1 class = "font-weight-bold">COVID in the United Kingdom</h5>
+                                <p>The United Kingdom has set guidlines that are accessible via the government website to inform citizens of the precuations taken to prevent COVID infection. <br><br><b>Click to learn more</b> </p>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="covid.html#arm"> <img class="d-block w-100 " src="images/arm1.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block text-left py-0">
+                              <h1 class = "font-weight-bold">COVID in the Republic of Armenia</h5>
+                              <p>First Covid case in Armenia was confirmed on March 1st in 2020. Since the Artsakh war, all the rules of wearing masks and going outside are not followed neither by Government officials nor by citizens. <br><b>Click to learn more</b></p>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+         </div>
+         <div class="section response">
+           <a href="uniresponse.html">
+             <h1 class = "display-5">University Response</h1>
+             <p> This page goes over the University of Manchester’s response to the pandemic and the steps it is taking to stop the spread. It also offers useful resources for students currently studying at the university, such as links to official university guidance and information on the rules put in place in order to keep the students working on campus as safe as possible. Also given are some examples of the research that the team at Manchester are doing into the nature of Covid and    solutions to the issues it causes. <br><b>Click to learn more</b>
+             </p>
+           </a>
+         </div>
+
+    </div>
+    <footer class = "footer text-center">
+       <p> This website is part of the Computer Science with Integrated Foundation Year project. Designed and created by <b>Asma Alshebli</b>, <b>Jonathan Hackett</b> and <b>Pavel Ghazaryan</b>. All CSS and Bootstrap templates that have been used and modified are taken from <a href="https://getbootstrap.com/" target="_blank">GetBootstrap</a> and <a href="https://www.w3schools.com/default.asp" target="_blank">W3schools</a>. All COVID information was taken from <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-the-covid-19-outbreak" target="_blank">UAE Goverment</a>,
+         <a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do" target="_blank">UK Government</a> and <a href="https://www.gov.am/en/covid-travel-restrictions/" target="_blank">RoA Government</a>.
+       </p>
+    </footer>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+    </script>
+    <script>
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+
+      $(window).on("load resize", function() {
+      if (this.matchMedia("(min-width: 768px)").matches) {
+      $dropdown.hover(
+        function() {
+          const $this = $(this);
+          $this.addClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "true");
+          $this.find($dropdownMenu).addClass(showClass);
+        },
+        function() {
+          const $this = $(this);
+          $this.removeClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "false");
+          $this.find($dropdownMenu).removeClass(showClass);
+        }
+      );
+      } else {
+      $dropdown.off("mouseenter mouseleave");
+      }
+      });
+    </script>
+  </body>
+
+</html>
+
+<!-- <div class="main">
+  <div style="background-image: url(https://www.westfield.ma.edu/the-owls-nest/wp-content/uploads/2021/01/blue-covid-banner.jpg);background-size: 1450px 710px;">
+      <div style="padding-top: 20px;">
+          <div class="trans-box2">
+            <h1 class="h1-index" style="font-size:50px;">Welcome</h1>
+          </div>
+      </div>
+      <div style="padding-top: 200px; padding-bottom: 20px;">
+          <div class="trans-box2">
+              <div class=p> As COVID started back in December 31, 2019, no one predicted the great impact it will have on the whole world. Our lives have changed drastically since then, whether it's our education, social life and mental health. We've all changed one way or another. In this website, a group of 3 students, Asma Alshebli, Jonathan Hackett and Pavel Ghazaryan share their personal experiences with COVID and summarize the measures their countries and university went through to prevent the pandemic from spreading.
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="trans-box2" style="padding-top: 20px;">
+      <h1 class="h1-index" style="font-size:50px;">Personal Experience</h1>
+  </div>
+     <div class="row">
+          <div class="container" >
+            <img src="asma.jpg" alt="group of peopler" class="image">
+              <div class="overlay">
+                <div class="text">
+                    <h2 style="padding-top: 10px;font-size:30px;">Asma</h2>
+                    <p> Asma Alshebli is an Emirati student enrolled in the foundation year program to pursue her studies in computer science. She shares her experience with COVID in the UAE.</p>
+                    <a href="#asma" type="button" class="btn btn-dark" role="button" style="font-size: 15px; color: #000;">Read more</a>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+              <img src="jonathan.jpg" alt="group of people" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <h2 style="padding-top: 10px;font-size: 30px;">Jonathan</h2>
+                  <p> Jonathan is a british foundation year student at The University of Manchester. He gives an insight on how COVID impacted him in the UK.</p>
+                  <a href="#jonathan" type="button" class="btn btn-dark" role="button" style="font-size: 15px; color: #000;">Read more</a>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+              <img src="pavel.jpg" alt="group of peopler" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <h2 style="padding-top: 10px; font-size: 30px;">Pavel</h2>
+                  <p> A foundation year student from Armenia, studying at The University of Manchester. Pavel writes about the effect COVID had on his life.</p>
+                  <a href="#pavel" type="button" class="btn btn-dark" role="button" style="font-size: 15px; color: #000;">Read more</a>
+                </div>
+              </div>
+          </div>
+    </div>
+<br>
+ <div class="container-fluid">
+     <div id="overview" class="carousel slide" data-ride="carousel" style="width: 100%;">
+              <ol class="carousel-indicators">
+                <li data-target="#overview" data-slide-to="0" class="active"></li>
+                <li data-target="#overview" data-slide-to="1"></li>
+                <li data-target="#overviewl" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="https://imagevars.gulfnews.com/2019/11/25/Reader-picture_16ea1bc25c8_original-ratio.jpeg" alt="UAE flag" style="width: 1300px; height: 800px;">
+                  <div class="carousel-caption">
+                    <div style="padding-bottom: 150px;">
+                      <div class="trans-box2">
+                      <h1 class="h1-index" style="font-size:50px">COVID in the United Arab Emirates</h1>
+                    </div>
+                    </div>
+                    <p class="p-index"> The United Arab Emirates puts several rules and regulations to ensure the safety of its citizens during the pandemic. Many tests have been done and citizens are encourages to take the COVID vaccinations at one of the many health centers in the country.
+                      <br> <br> <button type="button" class="btn btn-light" style="font-size: 15px;">Read more</button>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="https://d3d5bpai12ti8.cloudfront.net/wp-content/uploads/20200625124240/iStock-616242056-1024x621.jpg" alt="UK flag" style="width: 1300px; height: 800px;">
+                  <div class="carousel-caption">
+                    <div style="padding-bottom: 150px;">
+                      <div class="trans-box2">
+                      <h1 class="h1-index" style="font-size:  50px;">COVID in the United Kingdom</h1>
+                    </div>
+                    </div>
+                    <p class="p-index"> The United Kingdom has set guidlines that are accessible via the government website to inform cotizens of the precuations taken to prevent COVID infection.
+                     <br> <br> <button type="button" class="btn btn-light" style="font-size: 15px;">Read more</button>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                  <img src="https://cdn.theculturetrip.com/wp-content/uploads/2018/06/armenian-flag.jpg" alt="Armenia Flag" style="width: 1300px; height: 800px;">
+                  <div class="carousel-caption">
+                    <div style="padding-bottom: 100px;">
+                      <div class="trans-box2">
+                      <h1 class="h1-index" style="font-size:50px;">COVID in the Republic of Armenia</h1>
+                    </div>
+                    </div>
+                    <p class="p-index"> As of April 12, 2021, Armenia has 203,327 confirmed cases of Covid-19 within its borders. First Covid case in Armenia was confirmed on March 1st in 2020. The main problem for the Government was that a lot of people in Armenia didn't believe the virus to be real and were sure that it is some kind of a lie. Since the Artsakh war, all the rules of wearing masks and going outside are not followed neither by Government officials nor by citizens.
+                      <br> <br> <button type="button" class="btn btn-light" style="font-size: 15px;">Read more</button>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <a class="left carousel-control" href="#overview" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#overview" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+        <br>
+        <div class="row" style="width: auto;">
+          <div style="background-image:url(https://eu-assets.simpleview-europe.com/manchester2016-study/imageresizer/?image=%2Fdbimgs%2FUoM%205.jpg&action=Background_Overlay);background-size: 1750px 700px;">
+            <div class="trans-box2">
+              <h1 class="h1-index" style="font-size:xx-large;">University Response</h1>
+            </div>
+            <div style="padding-top: 200px; padding-bottom: 20px;">
+              <div class="trans-box2">
+                <div class="col">
+                    <p class="p-index" style="color: white;">  This page goes over the University of Manchester’s response to the pandemic and the steps it is taking to stop the spread. It also offers useful resources for students currently studying at the university, such as links to official university guidance and information on the rules put in place in order to keep the students working on campus as safe as possible. Also given are some examples of the research that the team at      Manchester are doing into the nature of Covid and solutions to the issues it causes.
+                      <br><a href="uniresponse.html" type="button" class="btn btn-dark" role="button" style="font-size: 15px; margin-left: 500px;color: #000;">Read more<a>
+                    </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br>
+        </div>
+</div>
+<footer style="padding-top: 20px;padding-left: 20px; padding-right: 20px;">
+   <p> This website is part of the Foundation Year project. Created and written by Asma Alshebli, Jonathan Hackett and Pavel Ghazaryan. All CSS and Bootstrap templates have been used and modified are taken from <a href="https://getbootstrap.com/" target="_blank">getbootstrap</a> and <a href="https://www.w3schools.com/default.asp" target="_blank">w3schools</a>. All COVID information was taken from <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-the-covid-19-outbreak" target="_blank">UAE Goverment</a> ,
+     <a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do" target="_blank">UK Government</a> and <a href="https://en.wikipedia.org/wiki/COVID-19#References" target="_blank">wikipedia references</a>
+   </p>
+</footer> -->
